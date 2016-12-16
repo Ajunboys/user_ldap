@@ -338,7 +338,7 @@ class Connection extends LDAPUtility {
 				$this->configuration->$effectiveSetting = $uuidOverride;
 			} else {
 				$uuidAttributes = array('auto', 'entryuuid', 'nsuniqueid',
-										'objectguid', 'guid');
+										'objectguid', 'guid', 'ipauniqueid');
 				if(!in_array($this->configuration->$effectiveSetting,
 							$uuidAttributes)
 					&& (!is_null($this->configID))) {
